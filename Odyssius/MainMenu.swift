@@ -9,6 +9,7 @@
 import SpriteKit
 
 class MainMenu: SKScene {
+	// Test Main Menu possibilities
 	var button_01:SKSpriteNode!
 	var button_02:SKSpriteNode!
 	var touchLocation:CGPoint = CGPointZero

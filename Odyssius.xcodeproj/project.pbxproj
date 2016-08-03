@@ -15,6 +15,13 @@
 		26E5544A1D48206E00B75C9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E554491D48206E00B75C9D /* Assets.xcassets */; };
 		26E5544D1D48206E00B75C9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E5544B1D48206E00B75C9D /* LaunchScreen.storyboard */; };
 		26E554581D48206E00B75C9D /* OdyssiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E554571D48206E00B75C9D /* OdyssiusUITests.swift */; };
+		26E554631D48258800B75C9D /* testEnemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26E554621D48258800B75C9D /* testEnemy.sks */; };
+		26E554651D4825E600B75C9D /* testBullet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26E554641D4825E600B75C9D /* testBullet.sks */; };
+		26E5546A1D48515200B75C9D /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26E554691D48515200B75C9D /* MainMenu.sks */; };
+		26E5546E1D4852AE00B75C9D /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5546D1D4852AE00B75C9D /* MainMenu.swift */; };
+		26E554701D48564D00B75C9D /* Level_02.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5546F1D48564D00B75C9D /* Level_02.swift */; };
+		26E554721D48567000B75C9D /* Level_02.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26E554711D48567000B75C9D /* Level_02.sks */; };
+		26E554761D486BBD00B75C9D /* BulletHit.sks in Resources */ = {isa = PBXBuildFile; fileRef = 26E554741D486BBD00B75C9D /* BulletHit.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,13 @@
 		26E554531D48206E00B75C9D /* OdyssiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OdyssiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E554571D48206E00B75C9D /* OdyssiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OdyssiusUITests.swift; sourceTree = "<group>"; };
 		26E554591D48206E00B75C9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E554621D48258800B75C9D /* testEnemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testEnemy.sks; sourceTree = "<group>"; };
+		26E554641D4825E600B75C9D /* testBullet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = testBullet.sks; sourceTree = "<group>"; };
+		26E554691D48515200B75C9D /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		26E5546D1D4852AE00B75C9D /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		26E5546F1D48564D00B75C9D /* Level_02.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level_02.swift; sourceTree = "<group>"; };
+		26E554711D48567000B75C9D /* Level_02.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level_02.sks; sourceTree = "<group>"; };
+		26E554741D486BBD00B75C9D /* BulletHit.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BulletHit.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +96,14 @@
 			isa = PBXGroup;
 			children = (
 				26E5543E1D48206E00B75C9D /* AppDelegate.swift */,
-				26E554401D48206E00B75C9D /* GameScene.sks */,
-				26E554421D48206E00B75C9D /* GameScene.swift */,
 				26E554441D48206E00B75C9D /* GameViewController.swift */,
+				26E554681D48514200B75C9D /* Main Menu */,
+				26E554671D48512500B75C9D /* Levels */,
+				26E554661D48510E00B75C9D /* Spawn Sprites */,
+				26E554731D486B9000B75C9D /* Particle Effects */,
 				26E554461D48206E00B75C9D /* Main.storyboard */,
-				26E554491D48206E00B75C9D /* Assets.xcassets */,
 				26E5544B1D48206E00B75C9D /* LaunchScreen.storyboard */,
+				26E554491D48206E00B75C9D /* Assets.xcassets */,
 				26E5544E1D48206E00B75C9D /* Info.plist */,
 			);
 			path = Odyssius;
@@ -100,6 +116,43 @@
 				26E554591D48206E00B75C9D /* Info.plist */,
 			);
 			path = OdyssiusUITests;
+			sourceTree = "<group>";
+		};
+		26E554661D48510E00B75C9D /* Spawn Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				26E554621D48258800B75C9D /* testEnemy.sks */,
+				26E554641D4825E600B75C9D /* testBullet.sks */,
+			);
+			name = "Spawn Sprites";
+			sourceTree = "<group>";
+		};
+		26E554671D48512500B75C9D /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				26E554401D48206E00B75C9D /* GameScene.sks */,
+				26E554421D48206E00B75C9D /* GameScene.swift */,
+				26E554711D48567000B75C9D /* Level_02.sks */,
+				26E5546F1D48564D00B75C9D /* Level_02.swift */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		26E554681D48514200B75C9D /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				26E554691D48515200B75C9D /* MainMenu.sks */,
+				26E5546D1D4852AE00B75C9D /* MainMenu.swift */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		26E554731D486B9000B75C9D /* Particle Effects */ = {
+			isa = PBXGroup;
+			children = (
+				26E554741D486BBD00B75C9D /* BulletHit.sks */,
+			);
+			name = "Particle Effects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +238,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E554631D48258800B75C9D /* testEnemy.sks in Resources */,
 				26E554411D48206E00B75C9D /* GameScene.sks in Resources */,
+				26E554761D486BBD00B75C9D /* BulletHit.sks in Resources */,
 				26E5544D1D48206E00B75C9D /* LaunchScreen.storyboard in Resources */,
+				26E554651D4825E600B75C9D /* testBullet.sks in Resources */,
+				26E554721D48567000B75C9D /* Level_02.sks in Resources */,
 				26E5544A1D48206E00B75C9D /* Assets.xcassets in Resources */,
+				26E5546A1D48515200B75C9D /* MainMenu.sks in Resources */,
 				26E554481D48206E00B75C9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +267,8 @@
 				26E554431D48206E00B75C9D /* GameScene.swift in Sources */,
 				26E554451D48206E00B75C9D /* GameViewController.swift in Sources */,
 				26E5543F1D48206E00B75C9D /* AppDelegate.swift in Sources */,
+				26E554701D48564D00B75C9D /* Level_02.swift in Sources */,
+				26E5546E1D4852AE00B75C9D /* MainMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +457,7 @@
 				26E5545E1D48206E00B75C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E5545F1D48206E00B75C9D /* Build configuration list for PBXNativeTarget "OdyssiusUITests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +466,7 @@
 				26E554611D48206E00B75C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
